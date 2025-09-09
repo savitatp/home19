@@ -1,0 +1,14 @@
+jQuery(document).ready(function(){
+    jQuery('.zoomCheck').click(function(event){
+        event.preventDefault();
+        if( ! jQuery(this).hasClass('active') ) {
+            jQuery(this).css('transform', 'scale(2)');
+            jQuery(this).css('cursor', 'zoom-out');
+            jQuery(this).addClass('active');
+        }else {
+            jQuery(this).css('transform', 'scale(1)');
+            jQuery(this).css('cursor', 'zoom-in');
+            jQuery(this).removeClass('active');
+        }
+    });
+});

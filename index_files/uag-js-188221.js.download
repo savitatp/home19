@@ -1,0 +1,8 @@
+document.addEventListener("DOMContentLoaded", function(){ window.addEventListener( 'load', function() {
+	UAGBTabs.init( '.uagb-block-7d136062' );
+	UAGBTabs.anchorTabId( '.uagb-block-7d136062' );
+});
+window.addEventListener( 'hashchange', function() {
+	UAGBTabs.anchorTabId( '.uagb-block-7d136062' );
+}, false );
+ });

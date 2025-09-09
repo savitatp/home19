@@ -1,0 +1,193 @@
+( function ( $ ) {
+
+	let show_child_prompt = document.cookie.indexOf('siwgot-parent-sso=') ;
+
+	const displayConsoleInfo = ( msg ) => {
+		console.info(
+			'******************************* SIWGOT Says *******************************'
+		);
+		console.info( msg );
+		console.info(
+			'*************************************************************************'
+		);
+	};
+
+	const setCookie = ( name, value, days ) => {
+		let expires = '';
+		if ( days ) {
+			const date = new Date();
+			date.setTime( date.getTime() + days * 24 * 60 * 60 * 1000 );
+			expires = '; expires=' + date.toUTCString();
+		}
+		document.cookie = name + '=' + ( value || '' ) + expires + '; path=/';
+	};
+
+	const googleOneTap = (
+		{
+			client_id,
+			auto_select = false,
+			cancel_on_tap_outside = false,
+			context = 'signin',
+		},
+		callback
+	) => {
+		const contextValue = [ 'signin', 'signup', 'use' ].includes( context )
+			? context
+			: 'signin';
+		const googleScript = document.createElement( 'script' );
+		googleScript.setAttribute(
+			'src',
+			'https://accounts.google.com/gsi/client'
+		);
+		document.head.appendChild( googleScript );
+		window.onload = function () {
+			if ( client_id ) {
+				window.google.accounts.id.initialize( {
+					client_id,
+					callback,
+					auto_select,
+					cancel_on_tap_outside,
+					context: contextValue,
+				} );
+				window.google.accounts.id.prompt( ( notification ) => {
+					if ( notification.isNotDisplayed() ) {
+						displayConsoleInfo(
+							notification.getNotDisplayedReason()
+						);
+					} else if ( notification.isSkippedMoment() ) {
+						displayConsoleInfo( notification.getSkippedReason() );
+					} else if ( notification.isDismissedMoment() ) {
+						displayConsoleInfo( notification.getDismissedReason() );
+					}
+				} );
+
+				if (
+					'on' ===
+					SIWGOTData.button_settings[ 'enable-on-wp-login-page' ]
+				) {
+					window.google.accounts.id.renderButton(
+						document.getElementById( 'siwgot-login-button' ),
+						{
+							type: SIWGOTData.button_settings[ 'button-type' ],
+							theme: SIWGOTData.button_settings[ 'button-theme' ],
+							size: SIWGOTData.button_settings[ 'button-size' ],
+							shape: SIWGOTData.button_settings[ 'button-shape' ],
+							text: SIWGOTData.button_settings[ 'button-text' ],
+							logo_alignment:
+								SIWGOTData.button_settings[
+									'button-logo-alignment'
+								],
+							width: SIWGOTData.button_settings[ 'button-width' ],
+						}
+					);
+				}
+
+				const buttonShortcode = $( '#siwgot-login-button-shortcode' );
+				if ( buttonShortcode.length ) {
+					// For Shortcode rendering.
+					window.google.accounts.id.renderButton(
+						document.getElementById(
+							'siwgot-login-button-shortcode'
+						),
+						{
+							type: buttonShortcode.data( 'button-type' ),
+							theme: buttonShortcode.data( 'button-theme' ),
+							size: buttonShortcode.data( 'button-size' ),
+							shape: buttonShortcode.data( 'button-shape' ),
+							text: buttonShortcode.data( 'button-text' ),
+							logo_alignment: buttonShortcode.data(
+								'button-logo-alignment'
+							),
+							width: buttonShortcode.data( 'button-width' ),
+						}
+					);
+				}
+			} else {
+				displayConsoleInfo( 'client_id is missing' );
+			}
+		};
+	};
+
+	const prepare_redirect_parent_url = function (  ) {
+
+			let loginRedirectURL = '';
+
+			if ( Array.isArray( SIWGOTData.referrer_redirect_url ) ) {
+				const searchParams = new URLSearchParams(
+					window.location.search
+				);
+				for ( const referrer in SIWGOTData.referrer_redirect_url ) {
+					const param = SIWGOTData.referrer_redirect_url[ referrer ];
+					if ( searchParams.has( param ) ) {
+						window.location.href = searchParams.get( param );
+						return false;
+					}
+				}
+			}
+
+			if (
+				typeof siwgotShortcodeData !== 'undefined' &&
+				siwgotShortcodeData.hasOwnProperty( 'prompt_redirect_url' )
+			) {
+				loginRedirectURL = siwgotShortcodeData.prompt_redirect_url;
+			} else if ( $( '#loginform input[name=redirect_to]' ).length ) {
+				loginRedirectURL = SIWGOTData.login_redirect_url
+					? SIWGOTData.login_redirect_url
+					: $( '#loginform input[name=redirect_to]' ).val();
+			} else if ( $( '#registerform input[name=redirect_to]' ).length ) {
+				loginRedirectURL = SIWGOTData.register_redirect_url
+					? SIWGOTData.register_redirect_url
+					: $( '#registerform input[name=redirect_to]' ).val();
+			}
+
+
+			if( ! loginRedirectURL ) {
+				loginRedirectURL = window.location.href
+			}
+
+			return loginRedirectURL;
+	};
+
+
+	if( -1 === show_child_prompt  ) {
+
+		googleOneTap(
+			{
+				client_id: SIWGOTData.client_id,
+				auto_select: 'on' === SIWGOTData.auto_sign_in,
+				cancel_on_tap_outside: 'on' === SIWGOTData.cancel_on_tap_outside,
+				context: 'signin',
+			},
+			( response ) => {
+
+				const action = SIWGOTData.is_parent_type
+					? 'siwgot_google_one_tap_operation'
+					: 'siwgot_google_one_tap_sso_operation';
+
+				const postData = {
+					action,
+					// clientId: response.clientId,
+					credential: response.credential,
+					nonce: SIWGOTData.nonce,
+				};
+
+				let url = '';
+				if ( ! SIWGOTData.is_parent_type ) {
+					url =  window.location.origin + '/?' + new URLSearchParams(postData).toString() + '&redirect_back_url=' + window.location.href + '&redirect_to=' + window.location.href;
+				} else {
+					url =  window.location.origin + '/?' + new URLSearchParams(postData).toString() + '&redirect_back_url=' + prepare_redirect_parent_url() + '&redirect_to=' + window.location.href;
+				}
+
+				window.location.href = url;
+			}
+		);
+	}
+
+
+	$( '#loginform, #registerform' ).append(
+		$( '#siwgot-google-login-button' )
+	);
+	$( '#siwgot-login-button' ).bind( 'DOMNodeInserted', function () {
+		$( '#siwgot-google-login-button' ).css( 'display', 'block' );
+	} );
+} )( jQuery );
