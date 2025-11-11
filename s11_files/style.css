@@ -1,0 +1,656 @@
+@charset "utf-8";
+/* CSS Document */
+@import url(FontRoboTo.css);
+
+@import url("animate.css") only screen
+and (min-width: 1025px);
+
+/**********************************************************/
+
+
+    #maincontent
+        {
+            /*margin-left: 170px;
+            margin-right: 220px;*/
+            margin-left: 28%;
+            margin-right: 23%;
+            margin-top: -117%;
+       
+        }
+        #maincontentinner
+        {
+            padding: 0px 10px;
+        }
+        #maincontent .mainbox
+        {
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+                    }
+        .mainbox
+        {
+            border: 1px solid #e0e0e0;
+            background: #fdfdfd;
+            padding: 10px;
+        }
+        
+        
+           #maincontent .mainfooter
+        {
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .mainfooter
+        {
+            border: 1px solid #e0e0e0;
+            background: #fdfdfd;            
+        }
+
+        .link1
+        {
+            width: 24%;
+            float: left;
+        }
+        .link2
+        {
+            width: 49%;
+            float: left;
+        }
+        .link3
+        {
+            width: 24%;
+            float: left;
+        }
+        .link4
+        {
+            width: 24%;
+            float: left;
+        }
+        .links
+        {
+            background-color: maroon;
+            padding:1%;
+        }
+        .links a
+        {
+            background-color: rgb(178, 34, 34);
+            color: #FFFF00;
+            margin-right: 5px;
+            padding-right: 5px;
+            padding-left: 5px;
+            margin-bottom: 10px;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+            position: relative;
+        }
+        .booksdiv1
+        {
+            float: left;
+            width: 25%;
+        }
+        .marqueebooksdiv1
+        {
+            width: 49.7%;
+            float: left;
+            margin-right: 6px;
+        }
+        .Inquirydiv
+        {
+            width: 100%;
+            background-color: #dcf1f3;
+        }
+        .Inquirydivstyle1
+        {
+            text-align: center;
+            float: left;
+            width: 33%;
+        }
+        .Inquirydivstyle2
+        {
+            text-align: center;
+            float: left;
+            width: 34%;
+        }
+        .Inquirydivstyle3
+        {
+            text-align: center;
+            float: left;
+            width: 33%;
+        }
+/*********************footer**********************************/
+        .footerMainDiv
+        {
+            width: 100%;
+        }
+        
+.footerLeftDiv
+{
+float: left;
+width: 50%;
+}
+ 
+.footerRightDiv
+{
+float: left;
+width: 50%;
+}
+        .Inquirydivstyle1footer
+        {
+            text-align: left;
+            float: left;
+            width: 40%;
+        }
+        .Inquirydivstyle2footer
+        {
+            text-align: left;
+            float: left;
+            width: 60%;
+        }
+        .Inquirydivstyle3footer
+        {
+            text-align: left;
+            float: left;
+            width: 50%;
+        }
+        .Inquirydivstyle4footer
+        {
+            text-align: left;
+            float: left;
+            width: 50%;
+        }
+        
+@media screen and (max-width: 800px)
+{
+            .footerLeftDiv
+            {
+                 width: 100% !important;
+            }
+ 
+            .footerRightDiv
+            {
+                    width: 100% !important;
+            }
+        .Inquirydivstyle1footer
+        {
+            width: 50% !important;
+        }
+        .Inquirydivstyle2footer
+        {
+            width: 50% !important;
+        }
+
+}
+@media screen and (max-width: 620px)
+{
+           .Inquirydivstyle1footer
+        {
+            width: 100% !important;
+            text-align: center;
+        }
+        .Inquirydivstyle2footer
+        {
+            width: 100% !important;
+            text-align: center;
+        } 
+        .Inquirydivstyle3footer
+        {
+         text-align: center;
+             width: 100% !important;
+        }
+        .Inquirydivstyle4footer
+        {
+            text-align: center;
+            width:  100% !important;
+        }
+    
+}
+/*******************Offer page*****************************/
+.offerul
+{
+    font-family: tahoma,geneva,sans-serif;
+}
+.offerB
+{
+    font-family: tahoma,geneva,sans-serif;
+}
+.offermarqueediv
+{
+    padding: 20px;
+    border: 10px solid #226105;
+    text-align:justify;
+}
+.offermarqueeheading
+{
+    font-family: arial,helvetica,sans-serif;
+    font-size: 12px;
+    color: #FF8C00;
+    font-size: 18px;
+}
+.offermarqueediv p
+{
+    font-size:11px;
+       
+    font-family:arial,helvetica,sans-serif;
+}
+.offermarqueediv p u
+{
+    text-align: -webkit-center;
+     color: rgb(0, 0, 205);
+}
+
+/************************************************/
+.hidden1{
+     opacity:.2;
+}
+.visible1{
+     opacity:1;
+}
+
+.postfade
+{}
+
+
+.postleft
+{}
+.postright
+{}
+
+.productheading
+{
+    text-align:center;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration:underline;
+}
+
+.clr {clear: both;}
+body {
+	/* background-image: url(../images/index_img-15.jpg); */
+	background-repeat: repeat-y;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;	
+	    background-color: rgb(78, 226, 236); 
+}
+#wrap 
+{
+    width: 100%;
+    }
+#header {width: 960px; margin: 0px auto 10px;}
+#header_left {float:left;}
+#header_right{float: right;}
+#header_right img {
+	vertical-align: bottom;
+}
+#headersub {padding: 5px; margin-bottom: 5px; border-bottom: solid 1px #d9d9d9;}
+#logo {float:left;}
+#nav {
+	float: right;
+	font-size: 18px;
+	font-weight: 500; 
+	padding-top: 30px;
+}
+#nav li {
+	float: left;
+	margin-right: 30px;
+	list-style: none;
+}
+#nav a {
+	text-transform: uppercase;
+	color: #333333;
+	text-decoration: none;
+}
+#nav a:hover {color: #d71921;border-bottom:2px solid red;}
+#banner {width: 960px; margin: 0px auto 30px;}
+#homepage_content {
+	background-color: #FFFFFF;
+	padding: 30px 0px 50px;
+}
+#homepage_content_inner {width: 960px; margin: 0px auto;}
+.hpheadinggrey {
+	text-align: center;
+	font-size: 24px;
+	font-weight: 500; 
+}
+.hpsubheadinggrey {
+	text-align: center;
+	color: #666666;
+	font-size: 14px;
+	padding-bottom: 30px;
+}
+.hpheadinggreyborder {
+	text-align: center;
+}
+.hpcontentleft {
+	color: #666666;
+	font-size: 14px;
+	line-height: 24px;
+	float: left;
+	width: 50%;
+}
+.hpcontentleftinner {padding-right: 20px;}
+.hpcontentright {float: right; width: 50%;}
+#pagecontent {
+	background-color: #FFFFFF;
+	padding: 30px 0px 50px;
+}
+#pagecontent_inner {width: 960px; margin: 0px auto;}
+#prodgall {}
+.productitem {width: 220px; float: left; margin: 10px;border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;border:1px solid #666666;background: url(../images/pro_bg.jpg) no-repeat;}
+.productimg {	border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;padding-bottom: 20px;}
+    
+.productimggallery {	border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;}
+.proddesc {font-size: 13px; text-align: center;}
+#contact li {
+	list-style: url(../images/houseicon.gif);
+	float: left;
+	width: 290px;
+	margin-right: 10px;
+	font-size: 14px;
+}
+#contactform {padding-top: 50px;}
+#contactformleft, #contactformright {float: left; width: 50%;}
+#contactformfooter {
+	text-align: right; margin: 5px 10px 30px;
+}
+.heading1 {
+	font-size: 20px;
+	font-weight: bold;
+	display: block;
+	margin-bottom: 15px;
+	text-align:center;
+}
+.blackbtn {
+	color: #FFFFFF;
+	text-transform: uppercase;
+	background-color: #111111;
+	border: none;
+	padding: 10px 25px;
+	font-weight: 500; 
+	border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.blackbtnwidth
+{
+    width:50% !important;
+    margin-top: 15px !important ;
+}
+
+.req
+  {
+      color:Red;
+      font-weight:bold;
+}
+
+
+#contactform input {width: 90%; border: solid 1px #e2dcdc; padding: 15px; margin-bottom: 20px;border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;}
+#contactform textarea {width: 90%; border: solid 1px #e2dcdc; padding: 15px;border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;margin: 0px auto 20px;}
+#footer {
+	background-image: url(../images/index_img-16.jpg);
+	color: #FFFFFF;
+	margin-top: 50px;
+}
+#footer_inner {
+	width: 960px;
+	margin: 0px auto;
+	padding: 15px;
+}
+#footerleft {float: left;}
+#footerleft img {margin-top: 10px;}
+#footeright {float: right; padding-top: 40px;}
+.carousel-inner img {width: 960px; margin: 0px auto;}
+/* #Media Queries
+    
+================================================== */
+
+@media only screen and (min-width: 768px) and (max-width: 1012px) {
+
+}
+@media only screen and (min-width: 1009px) 
+{
+    #navwrap 
+    {
+        display:none;
+        }
+	#header 
+	{
+	    margin-top: 0;
+	    }
+	    #content 
+	    {
+	        margin-top: 20px;
+	        }
+ }
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+	#navbar navbar-inverse navbar-fixed-top { display: none !important;}#content {margin-top: 20px;}
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	#navbar navbar-inverse navbar-fixed-top { display: none !important;}#content {margin-top: 20px;}
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) 
+{    
+	#nav, #logo {display: none;}
+	#header {margin-top: 60px;}
+	#header, #banner, #homepage_content_inner, #pagecontent_inner, #footer_inner {width: 95%;}
+	.hpcontentleft {
+		color: #666666;
+		font-size: 14px;
+		line-height: 24px;
+		float: none;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	#banner {width: 95%; margin: 0px auto 30px;}
+	#banner img { }
+	.hpcontentleftinner {padding-right: 0px;}
+	.hpcontentright {float: none; width: 100%; text-align: center }
+	.hpcontentright img {
+  max-width: 90%;
+  height: auto;
+  width: auto\9; /* ie8 */
+ }
+	#footerleft {float: none; text-align: center;}
+	#footerleft img {margin-top: 10px;}
+	#footeright {float: none; text-align: center; padding-top: 20px;}
+	#pagecontent_inner {width: 100%; margin: 0px auto;}
+	#prodgall {}
+	.productitem {width: 45%; float: left; margin: 10px; text-align: center;}
+	#contact li {
+		list-style: url(../images/houseicon.gif);
+		float: none;
+		width: 100%;
+		margin-right: 0px;
+		font-size: 14px;
+		text-align: left;
+	}
+	#contactform {padding-top: 50px;}
+	#contactformleft, #contactformright {float: none; width: 90%; margin: 0px auto;}
+	#contactformfooter {
+		text-align: right; margin: 5px 10px 30px;
+	}
+	#contactform input {width: 95%; border: solid 1px #e2dcdc; padding: 15px; margin: 0px auto 20px;}
+	#contactform textarea {width: 95%; border: solid 1px #e2dcdc; padding: 15px;margin: 0px auto 20px;}
+	
+	.locationmap
+	{
+	    display:none;	    
+    }
+    
+    .blackbtnwidth
+    {
+        width:100% !important;
+        margin-top: 15px !important ;
+    }
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+	#pagecontent_inner {width: 90%; margin: 0px auto;}
+	#prodgall {}
+	.productitem {width: 90%; float: none; margin: 10px; text-align: center;}
+	.productitem img {
+		max-width: 90%;
+		height: auto;
+		width: auto\9; /* ie8 */
+}
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+}
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+
+

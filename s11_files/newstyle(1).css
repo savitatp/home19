@@ -1,0 +1,536 @@
+.marqueestyle
+{
+    background-color: #4ee2ec;
+    padding: 5px;
+    font-family: arial, helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.headingone
+{
+    text-align: center;
+    font-size: 14px;
+    font-family: tahoma,geneva,sans-serif;
+    font-weight: bold;
+    color: #800000;
+    padding: 5px;
+}
+.headdingTwo
+{
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+.mainstyle
+{
+    text-align: justify;
+    font-size: 12px;
+    font-family: tahoma,helvetica,verdana,geneva,sans-serif;
+}
+
+.peragraphalighn
+{
+    text-align: center;
+    font-size: 14px;
+    color: rgb(0, 0, 128);
+    font-weight: bold;
+}
+
+/*******************************commitee Page***************************************/
+.commiteeTable
+{
+    font-size: 14px;
+    color: rgb(0, 100, 0);
+}
+
+.tableend
+{
+    padding: 23%;
+}
+/*******************************Course Page***************************************/
+
+.tableMainHeading
+{
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    color: #461c04;
+    background-color: rgb(78, 226, 236);
+}
+
+.tableSubHeading
+{
+    font-weight: bold;
+    padding-left: 0.25in;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(26, 185, 218);
+}
+
+.tableSmallHeading
+{
+    margin-left: 0.25in;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.tableListData
+{
+    margin-left: 0.25in;
+    font-size: 14px;
+}
+
+.otherShortterm
+{
+    margin-left: 0.10in;
+    font-weight: bold;
+}
+
+.coursebottem
+{
+    text-align: center;
+}
+.coursebottemDNC
+{
+    text-align: center;
+    color: #FF0000;
+}
+.coursebottemLegal
+{
+    text-align: center;
+    color: #800000;
+}
+.courseDeclare
+{
+    font-size: 9px;
+}
+
+.courseTable
+{
+    background-color: rgb(78, 226, 236);
+    text-align: center;
+    border: 12px #800000;
+}
+@media screen and (max-width: 900px)
+{
+    .tableMainHeading
+    {
+        font-size: 12px !important;
+    }
+    .tableSubHeading
+    {
+        font-size: 12px !important;
+    }
+    .tableSmallHeading
+    {
+        font-size: 12px !important;
+    }
+    .tableListData
+    {
+        font-size: 12px !important;
+    }
+    .tableDatapading
+    {
+        padding-right: 6px;
+    }
+}
+
+/*******************************Student cornder Page***************************************/
+
+.studentTableHead
+{
+    text-align: center;
+    color: rgb(0, 0, 205);
+}
+.studentGradeTableHead
+{
+    color: rgb(255, 0, 0);
+    text-align: center;
+    font-weight: bold;
+}
+.studentGradeTableData
+{
+    color: rgb(0, 128, 0);
+    text-align: center;
+}
+
+/*******************************notic bord Page***************************************/
+.BordHeading
+{
+    text-align: center;
+    font-weight: bold;
+    color: #006400;
+}
+.BortSpam
+{
+    color: #0000cd;
+}
+
+.BordPageEnd
+{
+    font-size: 14px;
+    color: #a52a2a;
+    text-align: center;
+    font-weight: bold;
+}
+.BorderOr
+{
+    color: #ff8c00;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*******************************placement cell Page***************************************/
+.celltable
+{
+    width: 60%;
+    height: 540px;
+}
+.cellImage
+{
+    width: 243px;
+    height: 92px;
+}
+.cellSpam
+{
+    color: rgb(255, 255, 255);
+    background-color: #a4cb05;
+}
+.cellTabelHead
+{
+    font-weight: bold;
+    text-align: center;
+}
+.cellJobSite
+{
+    background-color: #ffff00;
+}
+.cellLinks
+{
+    font-size: 11px;
+    color: rgb(0, 0, 255);
+}
+
+ul a
+{
+    font-size: 11px;
+    color: rgb(0, 0, 255);
+}
+.mainstyle a
+{
+    color: #428bca;
+}
+/*******************************offer  Page***************************************/
+.offerIframe
+{
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    width: 250px;
+    height: 300px;
+}
+
+.offerregistration
+{
+    color: #ff0000;
+    text-align: justify;
+}
+.offerDivFoot
+{
+    background-color: #f14a0b;
+    border: 2px solid black;
+    border-radius: 5px 5px 5px 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: #FFFFFF;
+}
+
+.offerPeraFooter
+{
+    text-align: center;
+    font-size: 14px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+/*******************************Contact  Page***************************************/
+.contactServa
+{
+    text-align: center;
+}
+.contactYellow
+{
+    color: rgb(255,165,0);
+    font-weight: bold;
+}
+
+.contactBlue
+{
+    color: #0000cd;
+    font-weight: bold;
+}
+.contactRed
+{
+    color: #ff0000;
+    font-weight: bold;
+}
+.contactSharelink
+{
+    width: 38px;
+    height: 38px;
+}
+.contatwhatapp
+{
+    width: 50px;
+    height: 51px;
+}
+/*******************************Home  Page***************************************/
+
+.marqueeIndex
+{
+    background-color: maroon;
+    width: 100%;
+    color: #FFFFFF;
+    font-size: 11px;
+}
+.booksdiv img
+{
+    width: 150px;
+    height: 200px;
+}
+
+.InquirySpam
+{
+    font-size: 11px;
+}
+
+.homeLegal
+{
+    color: #0000CD;
+}
+
+/*****************************************footer******************************************/
+.booksdivFooter img
+{
+    width: 150px;
+    height: 200px;
+}
+/*
+.booksdiv1Footer
+{
+    float: left;
+    width: 14%;
+} */
+.marqueebooksdiv1Footer
+{
+    /* width: 72%;     float: left; */
+    width: 100% margin-right: 6px;
+}
+/*
+.booksdiv2Footer
+{
+}
+
+@media (max-width: 1200px) and (min-width:900px)
+{
+    .booksdiv1Footer
+    {
+        width: 17% !important;
+    }
+    .marqueebooksdiv1Footer
+    {
+        width: 66% !important;
+    }
+}
+
+@media screen and (max-width: 900px)
+{
+    .marqueebooksdiv1Footer
+    {
+        width: 100% !important;
+        margin-right: 0px !important;
+    }
+    .booksdiv2Footer
+    {
+        display: none !important;
+    }
+    .booksdiv1Footer
+    {
+        display: none !important;
+    }
+}
+*/
+/*****************************************header******************************************/
+.VeryfyStuden
+{
+    color: White;
+}
+
+.StudentLeft
+{
+    text-align: center;
+    float: left;
+    width: 50%;
+}
+.centerRight
+{
+    text-align: center;
+    width: 50%;
+    float: left;
+}
+.textboxwidth
+{
+    width: 160px;
+}
+.ShowHide1
+{
+    display: none;
+}
+.ShowHide
+{
+    display: contents;
+}
+.ShowHide a
+{
+color: rgb(255, 255, 0) !important;
+    background: rgb(204, 0, 0) !important;
+}   
+.ShowHide1 a
+{
+color: rgb(255, 255, 0) !important;
+    background: rgb(204, 0, 0) !important;
+}
+@media screen and (max-width: 900px) 
+{
+     .ShowHide
+    {
+        display: none !important;
+    }
+    .ShowHide1
+    {
+        display: block !important;
+    }   
+}
+@media screen and (max-width: 800px) and (min-width: 480px)
+{
+
+    .StudentLeft
+    {
+        /* border-right: 1px solid white; */
+        float: none !important;
+    }
+    .centerRight
+    {
+        float: none !important;
+    }
+    .headinglink
+    {
+        line-height: 32px;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    .headinglink
+    {
+        line-height: 32px !important;
+    }
+    .StudentLeft
+    {
+        float: left;
+        width: 100% !important;
+        border-right: 0px !important;
+    }
+    .centerRight
+    {
+        width: 100% !important;
+        float: none !important;
+    }
+    .VeryfyStuden
+    {
+        display: none !important;
+    }
+}
+
+/*****************************************Mobile Show hide div******************************************/
+.MobileShowHideDiv
+{
+}
+
+@media screen and (max-width: 800px)
+{
+    .MobileShowHideDiv
+    {
+        display: none !important;
+    }
+}
+
+/*****************************************index page******************************************/
+.indexRedHeading
+{
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+}
+@media screen and (max-width: 800px)
+{
+    #placementCell
+    {
+        display: none !important;
+    }
+    #CommitteePic
+    {
+        display: none !important;
+    }
+}
+/*****************************************leftpanel  ******************************************/
+.leftElearning
+{
+    width: 185px;
+    height: 87px;
+}
+
+.leftPera
+{
+    text-align: center;
+}
+.leftperatext
+{
+    font-size: 13px;
+    color: #cc0000;
+    font-weight: 400;
+}
+.leftMarquee
+{
+    height: 191px;
+}
+.leftMarquee a
+{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.leftFountsizeTen
+{
+    font-size: 10px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.leftFountsizeEleven
+{
+    font-size: 11px !important;
+    font-weight: normal !important;
+}
+.leftFountsizeNine
+{
+    font-size: 9px !important;
+    font-weight: normal !important;
+}
+.leftperatext1
+{
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+
